@@ -1,4 +1,6 @@
-# ChildSafe_Cipher
+# CIS4509 CW1
+
+# ChildSafe_Cipher Project Development
 
 #The project's fundamental goal was to create a secure yet intuitive interface that stimulates participation while also ensuring cybersecurity for its young users.
 
