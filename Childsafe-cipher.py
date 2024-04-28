@@ -12,4 +12,8 @@ class GraphicalPasswordInterface:
         self.graphical_elements = ["🌟", "🎈", "🍕", "🚀", "🌈", "🐱", "🎨", "🐻"]  # Example graphical elements
         self.selected_elements = []
 
+        self.grid_frame = tk.Frame(master)
+        self.grid_frame.pack()
+
+        
         
