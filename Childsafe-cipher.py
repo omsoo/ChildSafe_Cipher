@@ -26,7 +26,7 @@ class GraphicalPasswordInterface:
                                         command=self.confirm_selection)
         self.confirm_button.pack(pady=10)
 
-        def toggle_selection(self, element):
+    def toggle_selection(self, element):
         if element in self.selected_elements:
             self.selected_elements.remove(element)
         else:
