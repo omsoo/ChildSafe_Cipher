@@ -31,5 +31,18 @@ class GraphicalPasswordInterface:
         else:
             self.selected_elements.append(element)
 
-    
+    def confirm_selection(self):
+        if len(self.selected_elements) > 0:
+            print("Selected Graphical Password:", " ".join(self.selected_elements))
+            # Implement logic to proceed to the next step (registration phase)
+        else:
+            print("Please select at least one graphical element.")
+
+def main():
+    root = tk.Tk()
+    app = GraphicalPasswordInterface(root)
+    root.mainloop()
+
+if __name__ == "__main__":
+    main()
         
