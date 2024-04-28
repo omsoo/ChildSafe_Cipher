@@ -25,3 +25,24 @@ class GraphicalPasswordInterface:
         self.confirm_button = tk.Button(master, text="Confirm Selection", font=("Helvetica", 12),
                                         command=self.confirm_selection)
         self.confirm_button.pack(pady=10)
+
+        def toggle_selection(self, element):
+        if element in self.selected_elements:
+            self.selected_elements.remove(element)
+        else:
+            self.selected_elements.append(element)
+
+    def confirm_selection(self):
+        if len(self.selected_elements) > 0:
+            print("Selected Graphical Password:", " ".join(self.selected_elements))
+            # Implement logic to proceed to the next step (registration phase)
+        else:
+            print("Please select at least one graphical element.")
+
+def main():
+    root = tk.Tk()
+    app = GraphicalPasswordInterface(root)
+    root.mainloop()
+
+if __name__ == "__main__":
+    main()
